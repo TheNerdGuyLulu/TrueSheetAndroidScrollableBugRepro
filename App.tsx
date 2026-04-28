@@ -1,11 +1,15 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Content } from './Content.tsx';
+import { ViewAndScrollView } from './ViewAndScrollView.tsx';
+import { OnlyScrollView } from './OnlyScrollView.tsx';
+import { NormalBehaviour } from './NormalBehaviour.tsx';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <Content />
+      <ViewAndScrollView />
+      <OnlyScrollView />
+      <NormalBehaviour />
     </SafeAreaProvider>
   );
 };
